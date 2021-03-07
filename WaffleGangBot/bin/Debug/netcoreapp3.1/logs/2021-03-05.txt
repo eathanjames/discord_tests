@@ -1,0 +1,192 @@
+06:00:38 [Info] Discord: Discord.Net v2.3.0-dev-20210121.1 (API v6)
+06:00:39 [Verbose] Rest: GET users/@me: 425.74 ms
+06:00:39 [Info] Gateway: Connecting
+06:00:39 [Verbose] Rest: GET gateway: 38.18 ms
+06:00:39 [Info] Gateway: Connected
+06:00:40 [Verbose] Gateway: Connected to Waffle
+06:00:40 [Info] Gateway: Ready
+06:00:54 [Warning] Gateway: Discord.Net.HttpException: The server responded with error 50013: Missing Permissions
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendJsonAsync[TResponse](String method, String endpoint, Object payload, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.CreateMessageAsync(UInt64 channelId, CreateMessageParams args, RequestOptions options)
+   at Discord.Rest.ChannelHelper.SendMessageAsync(IMessageChannel channel, BaseDiscordClient client, String text, Boolean isTTS, Embed embed, AllowedMentions allowedMentions, MessageReference messageReference, RequestOptions options)
+   at WaffleGangBot.CommandHandler.OnMessageReceivedAsync(SocketMessage s) in C:\Users\eathanjames\RiderProjects\WaffleGangBot\WaffleGangBot\Services\CommandHandler.cs:line 45
+   at Discord.EventExtensions.InvokeAsync[T](AsyncEvent`1 eventHandler, T arg)
+   at Discord.WebSocket.DiscordSocketClient.TimeoutWrap(String name, Func`1 action)
+06:02:33 [Verbose] Rest: POST channels/203111248185786368/messages: 243.54 ms
+06:02:35 [Verbose] Rest: POST channels/203111248185786368/messages: 210.81 ms
+06:02:51 [Verbose] Rest: POST channels/203111248185786368/messages: 188.76 ms
+06:03:21 [Verbose] Rest: POST channels/203111248185786368/messages: 292.56 ms
+06:03:53 [Info] Discord: Discord.Net v2.3.0-dev-20210121.1 (API v6)
+06:03:54 [Verbose] Rest: GET users/@me: 647.85 ms
+06:03:54 [Info] Gateway: Connecting
+06:03:54 [Verbose] Rest: GET gateway: 32.83 ms
+06:03:55 [Info] Gateway: Connected
+06:03:55 [Verbose] Gateway: Connected to Waffle
+06:03:55 [Info] Gateway: Ready
+06:04:29 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:04:29 [Verbose] Rest: POST channels/203111248185786368/messages: 252.74 ms
+06:05:29 [Info] Discord: Discord.Net v2.3.0-dev-20210121.1 (API v6)
+06:05:29 [Verbose] Rest: GET users/@me: 663.03 ms
+06:05:30 [Info] Gateway: Connecting
+06:05:30 [Verbose] Rest: GET gateway: 32.02 ms
+06:05:30 [Info] Gateway: Connected
+06:05:30 [Verbose] Gateway: Connected to Waffle
+06:05:31 [Info] Gateway: Ready
+06:05:49 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:07:32 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:12:32 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:12:45 [Info] Discord: Discord.Net v2.3.0-dev-20210121.1 (API v6)
+06:12:45 [Verbose] Rest: GET users/@me: 723.04 ms
+06:12:46 [Info] Gateway: Connecting
+06:12:46 [Verbose] Rest: GET gateway: 34.1 ms
+06:12:47 [Info] Gateway: Connected
+06:12:47 [Verbose] Gateway: Connected to Waffle
+06:12:47 [Info] Gateway: Ready
+06:14:14 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:14:14 [Warning] Gateway: System.Exception: WebSocket connection was closed
+ ---> Discord.Net.WebSocketClosedException: The server sent close 1000: ""
+   at Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+06:14:15 [Info] Gateway: Disconnecting
+06:14:15 [Verbose] Gateway: Disconnected from Waffle
+06:14:15 [Info] Gateway: Disconnected
+06:14:16 [Info] Gateway: Connecting
+06:14:16 [Verbose] Rest: GET gateway: 29.93 ms
+06:14:16 [Info] Gateway: Connected
+06:14:16 [Info] Gateway: Resumed previous session
+06:15:55 [Info] Discord: Discord.Net v2.3.0-dev-20210121.1 (API v6)
+06:15:56 [Verbose] Rest: GET users/@me: 704.94 ms
+06:15:56 [Info] Gateway: Connecting
+06:15:56 [Verbose] Rest: GET gateway: 35.69 ms
+06:15:57 [Info] Gateway: Connected
+06:15:57 [Verbose] Gateway: Connected to Waffle
+06:15:58 [Info] Gateway: Ready
+06:16:33 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:17:04 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:17:08 [Verbose] Rest: POST channels/817459498914021396/messages: 285.16 ms
+06:17:08 [Verbose] Command: Executed "say" for EJames#6969 in @EJames#6969
+06:17:33 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:17:33 [Verbose] Rest: POST channels/203111248185786368/messages: 242.37 ms
+06:17:33 [Verbose] Command: Executed "say" for EJames#6969 in Waffle/dev
+06:17:54 [Warning] Gateway: A MessageReceived handler is blocking the gateway task.
+06:17:54 [Verbose] Rest: POST channels/203111248185786368/messages: 273.14 ms
+06:17:54 [Verbose] Command: Executed "say" for EJames#6969 in Waffle/dev
+06:18:07 [Verbose] Rest: POST channels/203111248185786368/messages: 200.61 ms
+06:18:07 [Verbose] Command: Executed "say" for Greg#6029 in Waffle/dev
+06:19:14 [Warning] Gateway: System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory`1 destination)
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+06:19:14 [Info] Gateway: Disconnecting
+06:19:14 [Verbose] Gateway: Disconnected from Waffle
+06:19:14 [Info] Gateway: Disconnected
+06:19:15 [Info] Gateway: Connecting
+07:02:20 [Warning] Gateway: System.Net.Http.HttpRequestException: An error occurred while sending the request.
+ ---> System.IO.IOException: Unable to read data from the transport connection: An established connection was aborted by the software in your host machine..
+ ---> System.Net.Sockets.SocketException (10053): An established connection was aborted by the software in your host machine.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.FillAsync()
+   at System.Net.Http.HttpConnection.ReadNextResponseHeaderLineAsync(Boolean foldedHeadersAllowed)
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at System.Net.Http.HttpConnection.SendAsyncCore(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithNtConnectionAuthAsync(HttpConnection connection, HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.HttpConnectionPool.SendWithRetryAsync(HttpRequestMessage request, Boolean doRequestAuth, CancellationToken cancellationToken)
+   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.DecompressionHandler.SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
+   at System.Net.Http.HttpClient.FinishSendAsyncBuffered(Task`1 sendTask, HttpRequestMessage request, CancellationTokenSource cts, Boolean disposeCts)
+   at Discord.Net.Rest.DefaultRestClient.SendInternalAsync(HttpRequestMessage request, CancellationToken cancelToken, Boolean headerOnly)
+   at Discord.Net.Rest.DefaultRestClient.SendAsync(String method, String endpoint, CancellationToken cancelToken, Boolean headerOnly, String reason)
+   at Discord.Net.Queue.RestRequest.SendAsync()
+   at Discord.Net.Queue.RequestBucket.SendAsync(RestRequest request)
+   at Discord.Net.Queue.RequestQueue.SendAsync(RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendInternalAsync(String method, String endpoint, RestRequest request)
+   at Discord.API.DiscordRestApiClient.SendAsync[TResponse](String method, String endpoint, BucketId bucketId, ClientBucketType clientBucket, RequestOptions options)
+   at Discord.API.DiscordRestApiClient.GetGatewayAsync(RequestOptions options)
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectInternalAsync()
+   at Discord.API.DiscordSocketApiClient.ConnectAsync()
+   at Discord.WebSocket.DiscordSocketClient.OnConnectingAsync()
+   at Discord.ConnectionManager.ConnectAsync(CancellationTokenSource reconnectCancelToken)
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+07:02:21 [Info] Gateway: Disconnecting
+07:02:21 [Info] Gateway: Disconnected
+07:02:23 [Info] Gateway: Connecting
+07:02:24 [Verbose] Rest: GET gateway: 1136.18 ms
+07:02:24 [Warning] Gateway: Failed to resume previous session
+07:02:25 [Info] Gateway: Connected
+07:02:25 [Verbose] Gateway: Connected to Waffle
+07:02:25 [Info] Gateway: Ready
+07:49:32 [Warning] Gateway: System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond..
+ ---> System.Net.Sockets.SocketException (10060): A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+   --- End of inner exception stack trace ---
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.GetResult(Int16 token)
+   at System.Net.Security.SslStream.<FillBufferAsync>g__InternalFillBufferAsync|215_0[TReadAdapter](TReadAdapter adap, ValueTask`1 task, Int32 min, Int32 initial)
+   at System.Net.Security.SslStream.ReadAsyncInternal[TReadAdapter](TReadAdapter adapter, Memory`1 buffer)
+   at System.Net.Http.HttpConnection.ReadBufferedAsyncCore(Memory`1 destination)
+   at System.Net.Http.HttpConnection.RawConnectionStream.ReadAsync(Memory`1 buffer, CancellationToken cancellationToken)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+07:49:32 [Info] Gateway: Disconnecting
+07:49:32 [Verbose] Gateway: Disconnected from Waffle
+07:49:32 [Info] Gateway: Disconnected
+07:49:33 [Info] Gateway: Connecting
+07:49:33 [Verbose] Rest: GET gateway: 284.63 ms
+07:49:33 [Verbose] Gateway: Connected to Waffle
+07:49:33 [Info] Gateway: Resumed previous session
+08:50:06 [Warning] Gateway: Discord.WebSocket.GatewayReconnectException: Server requested a reconnect
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+08:50:06 [Info] Gateway: Disconnecting
+08:50:06 [Verbose] Gateway: Disconnected from Waffle
+08:50:06 [Info] Gateway: Disconnected
+08:50:08 [Info] Gateway: Connecting
+08:50:08 [Verbose] Rest: GET gateway: 172.21 ms
+08:50:08 [Info] Gateway: Connected
+08:50:08 [Info] Gateway: Resumed previous session
+09:11:33 [Verbose] Rest: POST channels/203111248185786368/messages: 306.46 ms
+09:11:33 [Verbose] Command: Executed "say" for EJames#6969 in Waffle/dev
+09:57:06 [Warning] Gateway: System.Exception: WebSocket connection was closed
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+ ---> System.Net.WebSockets.WebSocketException (0x80004005): The remote party closed the WebSocket connection without completing the close handshake.
+   at System.Net.WebSockets.ManagedWebSocket.ThrowIfEOFUnexpected(Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.EnsureBufferContainsAsync(Int32 minimumRequiredBytes, CancellationToken cancellationToken, Boolean throwOnPrematureClosure)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at System.Net.WebSockets.ManagedWebSocket.ReceiveAsyncPrivate[TWebSocketReceiveResultGetter,TWebSocketReceiveResult](Memory`1 payloadBuffer, CancellationToken cancellationToken, TWebSocketReceiveResultGetter resultGetter)
+   at Discord.Net.WebSockets.DefaultWebSocketClient.RunAsync(CancellationToken cancelToken)
+   --- End of inner exception stack trace ---
+   at Discord.ConnectionManager.<>c__DisplayClass29_0.<<StartAsync>b__0>d.MoveNext()
+09:57:06 [Info] Gateway: Disconnecting
+09:57:06 [Verbose] Gateway: Disconnected from Waffle
+09:57:06 [Info] Gateway: Disconnected
+09:57:07 [Info] Gateway: Connecting
+09:57:07 [Verbose] Rest: GET gateway: 155.22 ms
+09:57:07 [Verbose] Gateway: Connected to Waffle
+09:57:08 [Info] Gateway: Resumed previous session
