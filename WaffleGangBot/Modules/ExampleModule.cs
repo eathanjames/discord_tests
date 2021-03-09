@@ -69,7 +69,17 @@ namespace WaffleGangBot.Modules
         {
             var startDate = new DateTime(2021, 01, 17);
             var daysCount = (DateTime.Now - startDate).Days;
-            return ReplyAsync(daysCount.ToString(CultureInfo.InvariantCulture) + " days since Tom ordered his VR set.");
+            ReplyAsync("Tom now has an Oculus, however it has been;");
+            return ReplyAsync(daysCount.ToString(CultureInfo.InvariantCulture) + " days since Tom ordered his Vive VR set.");
+        }
+        
+        [Command("vrtime"), Alias("vivetime", "tomtime")]
+        [Summary("How many days since Tom orders VR")]
+        public Task HoursSinceAsync()
+        {
+            var startDate = new DateTime(2021, 01, 17);
+            var daysCount = (DateTime.Now - startDate).Hours;
+            return ReplyAsync(daysCount.ToString(CultureInfo.InvariantCulture) + " days since Tom ordered his Vive VR set.");
         }
     }
 }
